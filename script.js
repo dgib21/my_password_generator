@@ -3,6 +3,11 @@ var wholeNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var validateLength = "";
+var validateSpecialCharacter;
+var validateNumericCharacter;
+var validateUpperCase; 
+var validateLowerCase;
 
 // Prompts user after generate button is clicked
 
@@ -25,6 +30,13 @@ function generatePassword() {
     var length_of_password = window.prompt("How many characters should your password contain?");
 
   }
+
+  //Validate character types of password 
+  var validateSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
+  var validateNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
+  var validateLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
+  var validateUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters"); 
+
 
 }
 

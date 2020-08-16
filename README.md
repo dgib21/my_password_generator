@@ -7,8 +7,7 @@ This was an assignment given by the UT Coding Bootcamp.  I was tasked to create 
 1. Clone your starter code [here](https://github.com/coding-boot-camp/friendly-parakeet).
 
 2. Refactor the code to meet the Acceptance Criteria.
-
-Need picture of Acceptance Criteria/  
+![Alt text](/assets/images/useracceptancecriteria.png.png.png?raw=true "Acceptance Criteria Image")
 
 
 # My Finished Product

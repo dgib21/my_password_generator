@@ -14,4 +14,6 @@ Need picture of Acceptance Criteria/
 # My Finished Product
 Here is the [Deployed Application Link](https://dgib21.github.io/my_password_generator/) for my assignment. 
 
+![Alt text](/assets/images/acceptanceCriteria.png.png?raw=true "Acceptance Criteria Image")
+
 

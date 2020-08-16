@@ -13,7 +13,7 @@ function writePassword() {
 
 //Global Variable Declarations 
 var wholeNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var specialCharacters = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
+var specialCharacters = [" ","#","$","'",")","(",":",";","=","@","[","]","^","_","`","!", "%", "&", ",", "*", "+", "-", "|",".", "/", "<", ">", "?", "~"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var validateLength = "";
@@ -53,7 +53,7 @@ function generatePassword() {
     var validateLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
     var validateUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
   }
-  //attaching the password possibilites to a string 
+  //attaching the password possibilites to a string and setting the variable to an empty string 
   var passwordpossibilities; 
 
   if (validateLowerCase) {

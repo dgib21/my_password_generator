@@ -54,7 +54,7 @@ function generatePassword() {
     var validateUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
   }
   //attaching the password possibilites to a string 
-  var passwordpossibilities = "";
+  var passwordpossibilities; 
 
   if (validateLowerCase) {
     passwordpossibilities = passwordpossibilities.concat(lowerCase)

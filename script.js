@@ -1,4 +1,3 @@
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -23,12 +22,6 @@ var validateNumericCharacter;
 var validateUpperCase;
 var validateLowerCase;
 
-// Prompts user after generate button is clicked
-
-//document.querySelector("#generate").addEventListener("click", writePassword);
-
-
-
 
 //Prompting user for the length of the password, its a function with a while loop inside checking input criteria 
 
@@ -38,7 +31,7 @@ function generatePassword() {
 
 
   //validation on the input 
-  while (length_of_password <= 8 || length_of_password >= 128 || isNaN(length_of_password)) {
+  while (length_of_password < 8 || length_of_password >= 129 || isNaN(length_of_password)) {
     console.log(length_of_password);
     alert("Password length must be no less than 8 characters, no more than 128 characters, and a whole number!")
     var length_of_password = window.prompt("How many characters should your password contain?");
@@ -52,7 +45,7 @@ function generatePassword() {
   var validateUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
 
 
-  // validating input again 
+  // validating input again (password criteria) 
   while (validateUpperCase === false && validateLowerCase === false && validateSpecialCharacter === false && validateNumericCharacter === false) {
     alert("You must choose at least one parameter");
     var validateSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
@@ -66,14 +59,20 @@ function generatePassword() {
   if (validateLowerCase) {
     passwordpossibilities = passwordpossibilities.concat(lowerCase)
   }
+  console.log(passwordpossibilities);
 
   if (validateSpecialCharacter) {
     passwordpossibilities = passwordpossibilities.concat(specialCharacters)
   }
 
+  console.log(passwordpossibilities);
+
+
   if (validateUpperCase) {
     passwordpossibilities = passwordpossibilities.concat(upperCase)
   }
+  console.log(passwordpossibilities);
+
 
   if (validateNumericCharacter) {
     passwordpossibilities = passwordpossibilities.concat(wholeNumber)
@@ -83,23 +82,17 @@ function generatePassword() {
 
   var userPassword = "";
 
-for (i = 0; i < length_of_password; i++) {
+  for (i = 0; i < length_of_password; i++) {
 
-  userPassword = userPassword + passwordpossibilities[Math.floor(Math.random() * passwordpossibilities.length)];
+    userPassword = userPassword + passwordpossibilities[Math.floor(Math.random() * passwordpossibilities.length)];
 
-  console.log(userPassword);
+    console.log(userPassword);
 
-      }     
+  }
 
-return userPassword; 
+  return userPassword;
 
 }
-
-
-
-
-// Get references to the #generate element
-//var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
